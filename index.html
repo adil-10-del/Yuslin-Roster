@@ -4,9 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yuslin Roster | Solusi Interior & Eksterior Bangunan Modern</title>
-  <meta name="description" content="Yuslin Roster menyediakan roster beton, bata ekspos, bata tempel, ornamen, genteng, list pang, wall panel, dan paving block untuk kebutuhan interior dan eksterior bangunan." />
+  <meta name="description" content="Yuslin Roster menyediakan roster beton, bata ekspos, bata tempel, ornamen, genteng, lis plafon, wall panel, dan paving block berkualitas untuk interior dan eksterior bangunan." />
+
   <style>
-    body { margin:0; font-family: Arial, Helvetica, sans-serif; color:#222; line-height:1.6; }
+    /* ===== RESET & GLOBAL ===== */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    h1, h2, h3 { margin-top: 0; }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #b30000;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* ===== HERO / HEADER ===== */
     header.hero {
       position: relative;
       height: 90vh;
@@ -14,34 +38,170 @@
       background-position: center;
       animation: slider 18s infinite;
     }
+
     @keyframes slider {
-      0% { background-image: url('asset/logo.jpg'); }
-      33% { background-image: url('asset/produk1.jpg'); }
-      66% { background-image: url('asset/produk2.jpg'); }
-      100% { background-image: url('asset/logo.jpg'); }
+      0%   { background-image: url('assets/logo.jpg'); }
+      33%  { background-image: url('assets/produk1.jpg'); }
+      66%  { background-image: url('assets/produk2.jpg'); }
+      100% { background-image: url('assets/logo.jpg'); }
     }
+
     .overlay {
-      position:absolute; inset:0; background:rgba(0,0,0,0.6);
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
     }
+
     .hero-content {
-      position:relative; z-index:2; color:#fff; text-align:center;
-      top:50%; transform:translateY(-50%);
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0 20px;
     }
-    nav { background:#b30000; padding:10px; text-align:center; }
-    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
-    section { padding:60px 20px; max-width:1100px; margin:auto; }
-    h2 { color:#b30000; margin-bottom:20px; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:20px; }
-    .card { background:#f5f5f5; padding:20px; border-radius:6px; text-align:center; }
-    .card img { width:100%; border-radius:6px; margin-bottom:10px; }
-    .stars { color:gold; font-size:18px; }
-    footer { background:#111; color:#ccc; text-align:center; padding:30px 20px; }
-    .btn { display:inline-block; background:#b30000; color:#fff; padding:12px 25px; border-radius:4px; text-decoration:none; }
-    .whatsapp { position:fixed; right:20px; bottom:20px; background:#25d366; color:#fff; padding:15px 20px; border-radius:50px; text-decoration:none; font-weight:bold; }
+
+    .hero-content h1 {
+      font-size: 46px;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      background: #b30000;
+      padding: 12px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    /* ===== BUTTON ===== */
+    .btn {
+      display: inline-block;
+      background: #b30000;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* ===== ABOUT & VISION ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #f5f5f5;
+      padding: 25px;
+      border-radius: 8px;
+    }
+
+    /* ===== PRODUCTS ===== */
+    .products { background: #fafafa; }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+
+    .product-card:hover { transform: translateY(-5px); }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-card h3 {
+      padding: 15px;
+      font-size: 16px;
+      color: #b30000;
+    }
+
+    /* ===== PORTFOLIO ===== */
+    .portfolio-note {
+      text-align: center;
+      color: #555;
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonial {
+      background: #f5f5f5;
+      padding: 25px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stars {
+      color: gold;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact p { margin: 8px 0; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    /* ===== WHATSAPP FLOAT ===== */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp img {
+      width: 32px;
+      height: 32px;
+    }
   </style>
 </head>
 <body>
 
+<!-- ===== HEADER ===== -->
 <header class="hero">
   <div class="overlay"></div>
   <div class="hero-content">
@@ -51,6 +211,7 @@
   </div>
 </header>
 
+<!-- ===== NAV ===== -->
 <nav>
   <a href="#about">Tentang Kami</a>
   <a href="#vision">Visi & Misi</a>
@@ -60,89 +221,80 @@
   <a href="#contact">Kontak</a>
 </nav>
 
+<!-- ===== ABOUT ===== -->
 <section id="about">
   <h2>Tentang Kami</h2>
-  <p>
-    Yuslin Roster adalah perusahaan konstruksi yang bergerak di bidang solusi interior dan eksterior bangunan. Kami memproduksi dan menyediakan roster beton, bata ekspos, bata tempel, ornamen, genteng, list pang, wall panel, serta paving block dengan kualitas tinggi untuk menunjang estetika dan kekuatan bangunan.
+  <p style="text-align:center; max-width:900px; margin:auto;">
+    Yuslin Roster adalah perusahaan konstruksi yang bergerak di bidang solusi interior dan eksterior bangunan. Kami memproduksi roster beton, bata ekspos, bata tempel, ornamen, genteng, list pang, wall panel, serta paving block dengan kualitas tinggi untuk menunjang estetika dan kekuatan bangunan.
   </p>
 </section>
 
+<!-- ===== VISION ===== -->
 <section id="vision">
   <h2>Visi & Misi</h2>
   <div class="grid">
     <div class="card">
       <h3>Visi</h3>
-      <p>Menjadi penyedia material konstruksi terpercaya dengan jangkauan nasional hingga internasional, yang unggul dalam kualitas dan desain.</p>
+      <p>Menjadi penyedia material konstruksi terpercaya dengan jangkauan nasional.</p>
     </div>
     <div class="card">
       <h3>Misi</h3>
       <ul>
-        <li>Menyediakan produk beton dan material bangunan berkualitas tinggi</li>
-        <li>Mendukung desain arsitektur modern dan fungsional</li>
-        <li>Memberikan pelayanan profesional dan kepuasan pelanggan</li>
-        <li>Terus berinovasi dalam kualitas dan variasi produk</li>
+        <li>Produk beton berkualitas tinggi</li>
+        <li>Desain modern dan fungsional</li>
+        <li>Pelayanan profesional</li>
+        <li>Inovasi berkelanjutan</li>
       </ul>
     </div>
   </div>
 </section>
 
-  <section class="products">
-    <div class="container">
-      <h2>Pilihan Produk</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="assets/list.jpg" alt="List Pang">
-          <h3>List Pang</h3>
-        </div>
-        <div class="product-card">
-          <img src="assets/bata tempel.jpg" alt="Bata Tempel">
-          <h3>Bata Tempel</h3>
-        </div>
-        <div class="product-card">
-          <img src="assets/Gambar4.jpg" alt="Roster Beton">
-          <h3>Roster Beton</h3>
-        </div>
-        <div class="product-card">
-          <img src="assets/nako.JPG" alt="Ornamen Beton">
-          <h3>Ornamen Beton</h3>
-        </div>
-        <div class="product-card">
-          <img src="assets/bata ekspos.jpg" alt="Bata Ekspose">
-          <h3>Bata Ekspose</h3>
-        </div>
-          <div class="product-card">
-          <img src="assets/genteng.jpg" alt="Genteng">
-          <h3>Genteng</h3>
-        </div>
-          <div class="product-card">
-          <img src="assets/Walpanel.jpg" alt="Walpanel">
-          <h3>Walpanel</h3>
-        </div>
-        <div class="product-card">
-          <img src="assets/Walpanel.jpg" alt="Paving Block">
-          <h3>Paving Block</h3>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- ===== PRODUCTS ===== -->
+<section id="products" class="products">
+  <h2>Produk & Katalog</h2>
+  <div class="product-grid">
+    <div class="product-card"><img src="assets/list.jpg"><h3>List Pang</h3></div>
+    <div class="product-card"><img src="assets/batatempel.jpg"><h3>Bata Tempel</h3></div>
+    <div class="product-card"><img src="assets/gambar4.jpg"><h3>Roster Beton</h3></div>
+    <div class="product-card"><img src="assets/ornamen.jpg"><h3>Ornamen Beton</h3></div>
+    <div class="product-card"><img src="assets/bata ekspos.jpg"><h3>Bata Ekspos</h3></div>
+    <div class="product-card"><img src="assets/genteng.jpg"><h3>Genteng</h3></div>
+    <div class="product-card"><img src="assets/wallpanel.jpg"><h3>Wall Panel</h3></div>
+    <div class="product-card"><img src="assets/paving.jpg"><h3>Paving Block</h3></div>
+  </div>
+</section>
 
+<!-- ===== PORTFOLIO ===== -->
 <section id="portfolio">
   <h2>Portofolio</h2>
-  <p>Portofolio kami menampilkan berbagai proyek yang telah dikerjakan untuk kebutuhan rumah tinggal, bangunan komersial, dan fasilitas umum.</p>
+  <p class="portfolio-note">Foto proyek pemasangan akan ditambahkan.</p>
 </section>
 
+<!-- ===== TESTIMONIALS ===== -->
 <section id="testimonials">
-  <h2>Testimoni</h2>
-  <p>"Kualitas roster sangat bagus dan pengerjaan rapi."</p>
-  <p>"Material kuat, desain modern, dan pelayanan profesional."</p>
+  <h2>Testimoni Pelanggan</h2>
+  <div class="grid">
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p>"Produk kuat dan hasilnya rapi."</p>
+      <strong>Andi – Purwakarta</strong>
+    </div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <p>"Pelayanan cepat dan kualitas memuaskan."</p>
+      <strong>Budi – Bandung</strong>
+    </div>
+  </div>
 </section>
 
-<section id="contact">
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact">
   <h2>Kontak Kami</h2>
-  <p><strong>Alamat:</strong> JL. Raya Citalang RT 001 RW 006, Citalang, Tegalwaru, Purwakarta</p>
+  <p><strong>Alamat:</strong> Kp. Simpang RT 002 RW 001, Batutumpang, Tegalwaru</p>
   <p><strong>Telepon / WhatsApp:</strong> 0831-8769-5656</p>
   <p><strong>Email:</strong> yuslinroster@gmail.com</p>
   <p><strong>Facebook:</strong> Yuslin Roster</p>
+  <br>
   <a class="btn" href="mailto:yuslinroster@gmail.com">Kirim Email</a>
 </section>
 
@@ -150,7 +302,9 @@
   <p>&copy; 2025 Yuslin Roster. Hak Cipta Dilindungi.</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/6283187695656" target="_blank">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/6283187695656" target="_blank" aria-label="Chat WhatsApp">
+  <img src="assets/whatsapp.jpg" alt="WhatsApp">
+</a>
 
 </body>
 </html>
