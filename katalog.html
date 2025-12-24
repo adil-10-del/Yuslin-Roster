@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Produk | Yuslin Roster</title>
+  <meta name="description" content="Katalog produk Yuslin Roster: roster beton, bata ekspos, bata tempel, ornamen, genteng, list pang, wall panel, dan paving block.">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+      color: #222;
+    }
+
+    header {
+      background: #b30000;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 { margin: 0; }
+
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #b30000;
+      margin-bottom: 40px;
+    }
+
+    .katalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .item {
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .item:hover { transform: translateY(-5px); }
+
+    .item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .item h3 {
+      margin: 15px 0 5px;
+      color: #b30000;
+    }
+
+    .item p {
+      padding: 0 15px 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    /* WhatsApp Floating */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp img {
+      width: 32px;
+      height: 32px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Katalog Produk</h1>
+  <p>Yuslin Roster – Interior & Eksterior Bangunan</p>
+</header>
+
+<nav>
+  <a href="index.html">Beranda</a>
+  <a href="katalog.html">Katalog</a>
+  <a href="index.html#contact">Kontak</a>
+</nav>
+
+<section>
+  <h2>Daftar Produk</h2>
+
+  <div class="katalog">
+    <div class="item">
+      <img src="asset/roster.jpg" alt="Roster Beton">
+      <h3>Roster Beton</h3>
+      <p>Roster beton berkualitas tinggi untuk sirkulasi udara dan estetika bangunan.</p>
+    </div>
+
+    <div class="item">
+      <img src="asset/bata-ekspos.jpg" alt="Bata Ekspos">
+      <h3>Bata Ekspos</h3>
+      <p>Bata ekspos dengan tampilan natural untuk interior dan eksterior modern.</p>
+    </div>
+
+    <div class="item">
+      <img src="asset/bata-tempel.jpg" alt="Bata Tempel">
+      <h3>Bata Tempel</h3>
+      <p>Solusi praktis untuk dinding dekoratif dengan kesan elegan.</p>
+    </div>
+
+    <div class="item">
+      <img src="asset/ornamen.jpg" alt="Ornamen Beton">
+      <h3>Ornamen Beton</h3>
+      <p>Beragam ornamen beton untuk memperindah bangunan Anda.</p>
+    </div>
+
+    <div class="item">
+      <img src="asset/list-pang.jpg" alt="List Pang">
+      <h3>List Pang</h3>
+      <p>List pang beton dengan desain rapi dan presisi tinggi.</p>
+    </div>
+
+    <div class="item">
+      <img src="asset/wallpanel.jpg" alt="Wall Panel">
+      <h3>Wall Panel</h3>
+      <p>Wall panel beton modern untuk tampilan dinding yang eksklusif.</p>
+    </div>
+
+    <div class="item">
+      <img src="asset/genteng.jpg" alt="Genteng">
+      <h3>Genteng</h3>
+      <p>Genteng beton kuat, tahan lama, dan estetis.</p>
+    </div>
+
+    <div class="item">
+      <img src="asset/paving.jpg" alt="Paving Block">
+      <h3>Paving Block</h3>
+      <p>Paving block berkualitas untuk halaman dan area parkir.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Yuslin Roster. All Rights Reserved.</p>
+</footer>
+
+<a href="https://wa.me/6283113381377" class="whatsapp" target="_blank">
+  <img src="asset/whatsapp.png" alt="WhatsApp">
+</a>
+
+</body>
+</html>
